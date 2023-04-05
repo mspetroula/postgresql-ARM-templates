@@ -39,19 +39,7 @@
         "vnetData": {"Network": {}},
         "dataEncryptionData": {},
         "authConfig": {},
-        "tags": {},
-        "firewallRules": {
-			"type": "object",
-            "value": {
-                "rules": [
-                    {
-                        "name": "ClientIPAddress",
-                        "startIPAddress": "[parameters('ipAddr')]",
-                        "endIPAddress": "[parameters('ipAddr')]"
-                    }
-                ]
-            }
-        }
+        "tags": {}
     },
     "resources": [
         {
