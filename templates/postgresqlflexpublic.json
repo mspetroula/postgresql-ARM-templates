@@ -24,7 +24,7 @@
     },
     "variables": {
         "serverEdition": "GeneralPurpose",
-        "storageSizeGB": 128,
+        "storageSizeGB": 32,
         "haEnabled": "Disabled",
         "availabilityZone": "",
         "standbyAvailabilityZone": "",
