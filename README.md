@@ -1,1 +1,1 @@
-# PostgreSQL Level Up - Operations
+# PostgreSQL Level Up - Operations and Management
