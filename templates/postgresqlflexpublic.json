@@ -75,6 +75,18 @@
             "tags": "[variables('tags')]",
             "type": "Microsoft.DBforPostgreSQL/flexibleServers"
         },
+	{
+            "type": "Microsoft.DBforPostgreSQL/flexibleServers/firewallRules",
+            "apiVersion": "2022-12-01",
+            "name": "[concat(parameters('serverName'), '/AllowAllAzureServicesAndResourcesWithinAzureIps')]",
+            "dependsOn": [
+                "[concat('Microsoft.DBforPostgreSQL/flexibleServers/', parameters('serverName'))]"
+            ],
+            "properties": {
+                "startIpAddress": "0.0.0.0",
+                "endIpAddress": "0.0.0.0"
+            }
+        },
         {
             "type": "Microsoft.DBforPostgreSQL/flexibleServers/firewallRules",
             "apiVersion": "2022-12-01",
